@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 100% 100%; /* White */
+    --foreground: 222.2 84% 4.9%; /* Black */
+    --card: 255 100% 100%; /* White */
+    --card-foreground: 0 0% 0%; /* Black */
+    --popover: 255 100% 100%; /* White */
+    --popover-foreground: 0 0% 0%; /* Black */
+    --primary: 221.2 83.2% 53.3%; /* Blue, same as before */
+    --primary-foreground: 0 0% 0%; /* Black */
+    --secondary: 210 25% 83%; /* Slate 400 */
+    --secondary-foreground: 0 0% 0%; /* Black */
+    --muted: 210 40% 96.1%; /* Light grey */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Dark grey */
+    --accent: 210 40% 96.1%; /* Light grey */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark grey */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* White */
+    --border: 214.3 31.8% 91.4%; /* Light border color */
+    --input: 214.3 31.8% 91.4%; /* Light input color */
+    --ring: 221.2 83.2% 53.3%; /* Blue */
+    --radius: 0.5rem; /* Same as before */
+    --chart-1: 12 76% 61%; /* Chart color 1 */
+    --chart-2: 173 58% 39%; /* Chart color 2 */
+    --chart-3: 197 37% 24%; /* Chart color 3 */
+    --chart-4: 43 74% 66%; /* Chart color 4 */
+    --chart-5: 27 87% 67%; /* Chart color 5 */
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* Black */
+    --foreground: 210 40% 98%; /* White */
+    --card: 0 0% 0%; /* Black */
+    --card-foreground: 210 40% 98%; /* White */
+    --popover: 0 0% 0%; /* Black */
+    --popover-foreground: 210 40% 98%; /* White */
+    --primary: 221.2 83.2% 53.3%; /* Blue, same as in root */
+    --primary-foreground: 210 40% 98%; /* White */
+    --secondary: 210 25% 83%; /* Slate 400 */
+    --secondary-foreground: 210 40% 98%; /* White */
+    --muted: 217.2 32.6% 17.5%; /* Dark grey */
+    --muted-foreground: 215 20.2% 65.1%; /* Light grey */
+    --accent: 217.2 32.6% 17.5%; /* Dark grey */
+    --accent-foreground: 210 40% 98%; /* White */
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 210 40% 98%; /* White */
+    --border: 217.2 32.6% 17.5%; /* Dark grey */
+    --input: 217.2 32.6% 17.5%; /* Dark grey */
+    --ring: 221.2 83.2% 53.3%; /* Blue */
+    --chart-1: 220 70% 50%; /* Chart color 1 */
+    --chart-2: 160 60% 45%; /* Chart color 2 */
+    --chart-3: 30 80% 55%; /* Chart color 3 */
+    --chart-4: 280 65% 60%; /* Chart color 4 */
+    --chart-5: 340 75% 55%; /* Chart color 5 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans);
+  }
+}
+.font-mono {
+  font-family: var(--font-geist-mono);
+}
